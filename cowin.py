@@ -18,9 +18,9 @@ def fetch_data_from_cowin(pincode):
     extract_availability_data(response)
     #print(response.text)
 
-# def fetch_data_for_state(district_ids):
-#     for district_id in district_ids:
-#         fetch_data_from_cowin(district_id)
+#### def fetch_data_for_state(district_ids):
+###     for district_id in district_ids:
+###         fetch_data_from_cowin(district_id)
 
 def extract_availability_data(response):
     response_json = response.json()
