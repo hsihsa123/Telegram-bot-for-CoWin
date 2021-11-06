@@ -1,12 +1,19 @@
 import requests
 import sys
+import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
 
 base_cowin_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin"
 now = datetime.now()
 today_date = now.strftime("%d-%m-%Y")
-api_url_telegram = "https://api.telegram.org/bot2039610624:AAFKOD48lPhrnBw5mbABeHQG6cU_xxLI7s0/sendMessage?chat_id=@__groupid__&text="
+api_url_telegram = "https://api.telegram.org/bot{}/sendMessage?chat_id=@__groupid__&text=".format(API_KEY)
 group_id = "cowin_python"
+
+#print (api_url_telegram)
 
 pincode = sys.argv[1]
 
