@@ -30,7 +30,7 @@ def extract_availability_data(response):
     for center in response_json["centers"]:
         for session in center["sessions"]:
             if session["available_capacity_dose1"] > 0:
-                message = "CenterId: {}, Name: {}, Dose 1 Slots: {}, Dose 2 Slots:{}, Vaccine name: {}, Minimum Age: {} \n ------------------------------ \n ".format(
+                message = " CenterId: {}, \n Name: {}, \n Dose 1 Slots: {}, \n Dose 2 Slots:{}, \n Vaccine name: {}, \n Minimum Age: {} \n ------------------------------------ \n ".format(
                     center["center_id"],center["name"],
                     session["available_capacity_dose1"],
                     session["available_capacity_dose2"],
