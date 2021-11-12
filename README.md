@@ -26,8 +26,8 @@ The Python script has the following main steps :
  3. Push message to telegram group whenever there is availability.     
  
  USAGE OF THE SCRIPT:
- Run the python program with pincode as an argument and the you will start getting notifications of slot availabilitu on your specified group in telegram.
- 
+ Run the python program and go to telegram group mentioned in the code.
+Type for any pincode with a "/" as a prefix and the bot will automatically send all the slots availability in that area.
     
 
 
